@@ -1,5 +1,6 @@
 Vue.component('app',{
-    template :`<header class="row">
+    template :`<div id="app">
+                <header class="row">
                     <div class="col-lg-12">
                         <search  @search-done="searchCompleted($event)"> </search>
                     </div>
@@ -14,7 +15,8 @@ Vue.component('app',{
                 </div>
                 <footer class="row">
                     Pied de page
-                </footer>`,
+                </footer>
+            </div>`,
     data : function () {
         return {
 
